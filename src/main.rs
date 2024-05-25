@@ -1,17 +1,17 @@
-use fltk::{app, prelude::*, window, frame::Frame, button::Button};
-use std::process;
+use piston_window::*;
 
 fn main() {
-    let app = app::App::default();
-    let mut wind = window::Window::new(100, 100, 600, 400, "Snake");
-    let mut but_start = Button::new(260, 150, 80, 40, "Start Game");
-    let mut but_exit = Button::new(260, 250, 80, 40, "Exit");
-    let mut frame = Frame::default().with_size(200, 100).center_of(&wind);
+    let title = "Hello Piston! (press any key to enter inner loop)";
+    let mut window: PistonWindow = WindowSettings::new(title, [720, 720])
+        .resizable(false)
+        .build()
+        .unwrap();
 
-    wind.end();
-    wind.show();
+    while let Some(e) = window.next() {
+        window.draw_2d(&e, |c, g, _| {
+            clear([0.5, 0.5, 0.5, 1.0], g);
+            c.view();
+        });
 
-    but_start.set_callback(move |_| frame.set_label("hello world"));
-    but_exit.set_callback(move |_| process::exit(1));
-    app.run().unwrap();
+    }
 }
