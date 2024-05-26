@@ -1,3 +1,5 @@
+mod snake;
+
 use piston_window::*;
 
 fn main() {
@@ -10,8 +12,12 @@ fn main() {
     while let Some(e) = window.next() {
         window.draw_2d(&e, |c, g, _| {
             clear([0.5, 0.5, 0.5, 1.0], g);
-            c.view();
+            rectangle(
+                [1.0, 0.0, 0.0, 1.0], 
+                [100.0, 0.0, 100.0, 100.0],
+                c.transform, g)
         });
-
+        
+        
     }
 }
