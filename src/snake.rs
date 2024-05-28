@@ -1,6 +1,4 @@
-const BODY_SIZE: f32 = 20.0;
 const INIT_LENGTH: u32 = 4;
-
 
 pub enum Direction {
     Up,
@@ -9,8 +7,6 @@ pub enum Direction {
     Right,
 }
 
-
-#[derive(Debug)]
 pub struct Position {
     pub x: u32,
     pub y: u32,
@@ -29,13 +25,13 @@ impl Snake {
         };
 
         for _ in 1..INIT_LENGTH {
-            snake.r#move(true);
+            snake.update(true);
         }
 
         snake
     }
     
-    fn update(&mut self, position: &Position, is_eat_food: bool) {
+    fn body_update(&mut self, position: &Position, is_eat_food: bool) {
         let last_position = Position {
             x: self.body[self.body.len()-1].x,
             y: self.body[self.body.len()-1].y,
@@ -54,7 +50,7 @@ impl Snake {
         }
     }
 
-    pub fn r#move(&mut self, is_eat_food: bool) {
+    pub fn update(&mut self, is_eat_food: bool) {
         let mut next_position = Position {
             x: self.body[0].x,
             y: self.body[0].y,
@@ -75,7 +71,7 @@ impl Snake {
             }
         }
         
-        self.update(&next_position, is_eat_food);
+        self.body_update(&next_position, is_eat_food);
     }
 
     pub fn set_direction(&mut self, direction: Direction) {
