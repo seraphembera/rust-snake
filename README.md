@@ -1,6 +1,6 @@
 English|[中文](README.zh_CN.md)
 # rust-snake
-`rust-snake` is a snake game written in rust, using [position_window](https://github.com/PistonDevelopers/piston_window.git) as the game engine. It refers to the [rnake](https://github.com/maras-archive/rsnake.git).
+`rust-snake` is a snake game written in rust, using [position_window](https://github.com/PistonDevelopers/piston_window.git) as the game engine. It refers to the [rsnake](https://github.com/maras-archive/rsnake.git).
 # Run
 Clone the `rust-snake` and run it using the `cargo run`. If you don't have a Rust development environment, install it [here](https://www.rust-lang.org/tools/install) first.
 ```bash
