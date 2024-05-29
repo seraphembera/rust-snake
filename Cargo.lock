@@ -1510,6 +1510,7 @@ name = "rust-snake"
 version = "0.1.0"
 dependencies = [
  "piston_window",
+ "rand",
 ]
 
 [[package]]
