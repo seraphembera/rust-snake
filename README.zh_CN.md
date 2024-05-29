@@ -1,4 +1,4 @@
-[English](README.md)|中文
+[English](README.md) | 中文
 # rust-snake
 ![GitHub Release](https://img.shields.io/github/v/release/seraphembera/rust-snake) ![GitHub Tag](https://img.shields.io/github/v/tag/seraphembera/rust-snake) ![GitHub License](https://img.shields.io/github/license/seraphembera/rust-snake)
 
