@@ -1,5 +1,7 @@
 [English](README.md)|中文
 # rust-snake
+![GitHub Release](https://img.shields.io/github/v/release/seraphembera/rust-snake)![GitHub Tag](https://img.shields.io/github/v/tag/seraphembera/rust-snake)![GitHub License](https://img.shields.io/github/license/seraphembera/rust-snake)
+
 `rust-snake`是一个用rust写的贪吃蛇小游戏，使用[position_window](https://github.com/PistonDevelopers/piston_window)作为游戏引擎。参考了[rsnake](https://github.com/maras-archive/rsnake.git)项目。
 # 运行
 ## cargo

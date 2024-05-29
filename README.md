@@ -1,5 +1,7 @@
 English|[中文](README.zh_CN.md)
 # rust-snake
+![GitHub Release](https://img.shields.io/github/v/release/seraphembera/rust-snake)![GitHub Tag](https://img.shields.io/github/v/tag/seraphembera/rust-snake)![GitHub License](https://img.shields.io/github/license/seraphembera/rust-snake)
+
 `rust-snake` is a snake game written in rust, using [position_window](https://github.com/PistonDevelopers/piston_window.git) as the game engine. It refers to the [rsnake](https://github.com/maras-archive/rsnake.git).
 # Run
 ## cargo
