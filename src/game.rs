@@ -30,6 +30,7 @@ impl Game {
         let window: PistonWindow = 
             WindowSettings::new(TITLE, [WIDTH as f64 * UNIT_SIZE, HEIGHT as f64 * UNIT_SIZE])
             .resizable(false)
+            .exit_on_esc(true)
             .build()
             .unwrap();
         let snake = 
