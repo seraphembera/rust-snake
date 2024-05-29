@@ -1,3 +1,4 @@
+[English](README.md)|中文
 # rust-snake
 `rust-snake`是一个用rust写的贪吃蛇小游戏，使用[position_window](https://github.com/PistonDevelopers/piston_window)作为游戏引擎。参考了[rnake](https://github.com/maras-archive/rsnake.git)项目。
 # 运行
